@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional | Pedro Lucas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#inicio" class="logo"><span aria-hidden="true">✦</span> Pedro Lucas</a>
+            
+            <button class="menu-hamburger" id="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Ativar tema noturno" aria-pressed="false">☾</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section hero-capa">
+            <div class="container">
+                <div class="card-content">
+                    <span id="saudacao" class="saudacao" aria-live="polite">Olá!</span>
+                    <h1>Pedro Lucas Batista Lins</h1>
+                    <p>Estudante de Tecnologia e Desenvolvedor em formação no Senac RN. Em busca de oportunidades de estágio em TI.</p>
+                    
+                    <div class="avatar-img" id="avatar-pedro">
+                        <img src="c:\Users\CLIENTE\Downloads\20261022_121447.jpg" alt="Foto de Pedro Lucas" class="avatar-photo">
+                        <span class="avatar-fallback" aria-hidden="true">PL</span>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section bg-paper">
+            <div class="container">
+                <div class="card-content">
+                    <span class="chapter-label">Registro Pessoal</span>
+                    <h2>Sobre Mim</h2>
+                    <div class="sobre-flex">
+                        <p>Tenho 16 anos e sou estudante no <strong>Senac RN</strong>. Apaixonado por inovação, lógica e resolução de problemas, busco minha primeira oportunidade de <strong>estágio na área de Tecnologia da Informação</strong> para aplicar meus conhecimentos práticos e evoluir profissionalmente no desenvolvimento de software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section bg-paper bg-paper-alt">
+            <div class="container">
+                <div class="card-content">
+                    <span class="chapter-label">Conhecimentos Técnicos</span>
+                    <h2>Habilidades</h2>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <h3>HTML5 & CSS3</h3>
+                            <p>Estruturação semântica, estilização moderna e páginas responsivas.</p>
+                        </article>
+                        <article class="skill-card">
+                            <h3>JavaScript</h3>
+                            <p>Lógica de programação, manipulação do DOM e interatividade web.</p>
+                        </article>
+                        <article class="skill-card">
+                            <h3>Lógica & Ciências</h3>
+                            <p>Raciocínio analítico, metodologia de estudos e interesse no cruzamento entre TI e Biologia.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section bg-paper">
+            <div class="container">
+                <div class="card-content">
+                    <span class="chapter-label">Portfólio de Práticas</span>
+                    <h2>Meus Projetos</h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <h3>1. Site Portfólio</h3>
+                            <p>Portfólio interativo desenvolvido com HTML, CSS e JavaScript puros para apresentação profissional.</p>
+                        </article>
+                        <article class="project-card">
+                            <h3>2. Guia de Estudos de Biologia</h3>
+                            <p>Página interativa com informações sobre anatomia e biologia animal estruturada para auxílio escolar.</p>
+                        </article>
+                        <article class="project-card">
+                            <h3>3. Diário de Bordo Web</h3>
+                            <p>Aplicação interativa no estilo caderno de anotações com alternância de temas e mensagens dinâmicas.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section bg-paper bg-paper-alt">
+            <div class="container">
+                <div class="card-content">
+                    <span class="chapter-label">Fale Comigo</span>
+                    <h2>Contato</h2>
+                    <p>Interessado em meu perfil para uma oportunidade de estágio? Entre em contato por um dos canais abaixo ou envie uma mensagem:</p>
+                    
+                    <div class="contato-info" style="margin-bottom: 20px;">
+                        <p><strong>Nome:</strong> Pedro Lucas Batista Lins</p>
+                        <p><strong>E-mail:</strong> <a href="mailto:pedrolucaslins12@gmail.com">pedrolucaslins12@gmail.com</a></p>
+                        <p><strong>Telefone / WhatsApp:</strong> (84) 8804-3043</p>
+                    </div>
+
+                    <form id="form-contato" class="form-contato" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" value="Pedro Lucas Batista Lins" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail de Contato:</label>
+                            <input type="email" id="email" name="email" value="pedrolucaslins12@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consentimento" name="consentimento" required>
+                            <label for="consentimento">Concordo com o envio e processamento dos meus dados para fins de contato profissional.</label>
+                        </div>
+
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; <span id="ano-atual"></span> Pedro Lucas Batista Lins. Todos os direitos reservados.</p>
+            <a href="#inicio" class="back-to-top">↑ Voltar ao início</a>
+        </div>
+    </footer>
+
+</body>
+</html>
